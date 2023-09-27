@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="load">
+      <img id="loading" src="images/load.jpg" alt="" width="850" />
+    </div>
+    <div id="container">
+      <div id="header"><h1>Rock-Paper-Scissor</h1></div>
+      <div id="winner"></div>
+      <div id="main">
+        <div id="player1">
+          <div class="points">
+            <div class="player1_points" id="player1_points">0</div>
+            <p>Player 1</p>
+          </div>
+          <div class="player1_move" id="player1_move">
+            <img
+              id="player1_image"
+              src="images/0.png"
+              alt=""
+              width="330"
+              style="margin: 20px 0 0 35px"
+            />
+          </div>
+        </div>
+        <div id="vs">
+          <div id="vs-inner">VS</div>
+        </div>
+
+        <div id="player2">
+          <div class="points">
+            <div class="player2_points" id="player2_points">0</div>
+            <p>Player 2</p>
+          </div>
+          <div class="player2_move" id="player2_move">
+            <img
+              id="player2_image"
+              src="images/0.png"
+              alt=""
+              width="330"
+              style="margin: 20px 0 0 35px; transform: rotateY(180deg)"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="draw"></div>
+      <div class="buttons">
+        <div class="btn-play" id="play">Play</div>
+        <div class="btn-Reset" id="reset">Reset</div>
+      </div>
+      <div id="footer"></div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
